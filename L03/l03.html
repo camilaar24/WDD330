@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css" />
+    <title>Camila A. Romero</title>
+</head>
+<body>
+<header>
+    <h1>L03 Readings</h1>
+  </header>
+  <main>
+    <h2>Ch9: The Window Object</h2>  
+    <hr size="3" color="grey">
+        <p>The Javascript window object is used to control the browser window.</p>
+        <i>The browser object model</i>
+        <p>The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-constructed XML documents. It defines the logical structure of documents and how they are accessed and manipulated.        </p>
+        <i>Find browser information</i>
+        <p>"The window object has a navigator property that returns a reference to the navigator object. The navigator the object contains information about the browser being used."</p>
+        <i>Browser history </i>
+        <p>The window. history object can be written without the window prefix.
+
+            history.back() - same as clicking back in the browser
+            history.forward() - same as clicking forward in the browser</p>
+        <i>Window control</i>
+        <p>The control window takes the URL of the page to open as the first parameter, the title of the window as the second parameter, and a list of attributes as the third parameter.</p>
+        <i>Cookies</i>
+        <p>Cookies are small pieces of text that the websites you visit send to your browser. Allow information for websites to remember about your visit, which can make it easier for you to visit the sites again and make the sites more useful to you.
+
+            "A restriction of cookies is that they can only be read by a web page from the same domain that set them"</p>
+        <p>To create a cookie, you assign it to JavaScript’s “cookie jar”, using the document.cookie property
+
+            timing functions
+            
+            The window object allows code execution at specific time intervals.
+            
+            These time intervals are called time events.
+            
+            The two key methods to use with JavaScript are:
+            
+            setTimeout(function, milliseconds)
+            Executes a function, after waiting a specified number of milliseconds.
+            
+            setInterval(function, milliseconds)
+            Same as setTimeout(), but repeats the execution of the function continuously.</p>
+    <h2>MDN The Content Template Element</h2>  
+        <hr size="3" color="grey">
+    <p>
+        Most of the time we work with HTML we find ourselves needing to repeat sections in multiple parts of a page and even on different pages. A clear example is the footer or menu section. Those who have traditionally written HTML in a multi-page project know that such sections must be duplicated over and over again. 
+        </p>
+
+        <p>The HTML <template> tag is a special element that allows us to define a template that will later be used by JavaScript. What's interesting is that this template doesn't paint right out of the box, giving you an edge over alternatives that just use JavaScript.</p>
+       
+  </main>
+  <footer>
+    <p>&copy; 2022 | Camila Romero | Maryland | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online </p>
+  </footer>
+</body>
+</html>

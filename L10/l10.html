@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css" />
+    <title>Camila A. Romero</title>
+</head>
+<body>
+<header>
+    <h1>L10 Readings</h1>
+  </header>
+  <main>
+    <h2>An Introduction to Functions, Execution Context and the Call Stack </h2>  
+    <hr size="3" color="grey">
+        
+        <p>JavaScript will take label x; will take that label and use it as a label for all the functionality, the whole function definition, and the whole set of keyword functions over it and it's going to capture that and store it under the label x -</p>
+¡
+           
+
+        <p>Our thread of execution takes the anonymous 3 encumbered y2 as backgrounds and also takes the name and never enters unless we call x. never go into it
+            
+            </p>
+
+            <p>
+                In general, a JavaScript source file will have multiple lines of code. As developers, we organize code into variables, functions, data structures like objects, arrays, and more.
+In the execution context, the code is parsed line by line, generates executable bytecode, allocates memory, and is executed.
+the execution context is the environment where a specific piece of code is executed.
+            </p>
+
+            <p>There are two types of execution contexts:
+                <li>Global execution context or Global Execution Context (GEC)</li>
+                <li>Function execution context or Function Execution Context (FEC)</li>
+                </p>
+
+ 
+    <p>
+        The Global Execution Context is created when we load the JavaScript file, even when it's empty.
+It creates two special things for us in its create phase, which is the window and this object.
+In the Global Execution Context, the window object and this are the same.
+There is nothing to run, since the script file is blank. Then nothing happens in the execution phase.
+        </p>
+       
+        <h2>How to Understand Callbacks & Higher Order Functions</h2>  
+        <hr size="3" color="grey">
+        <p>Callbacks are a great way to handle something after something else has been completed. By something here we mean the execution of a function. If we want to execute a function right after the return of some other function, then callbacks can be used.</p>
+        <p>JavaScript functions have the type of Objects. So just like any other object (String, Arrays, etc), they can be passed as an argument to any other function during the call. </p>
+        <p>JavaScript code to show how the callback works:</p>
+        <p>Code #1 </p>
+        <p>  // disp() function is called just
+            // after the end of add() function
+            function disp(){
+            document.write('This must be printed after addition');
+            }
+              
+            // Calling add() function
+            add(5,6,disp);</p>
+        <p>Functions that call other functions or return functions are known as higher-order functions.</p>
+        <p>They serve to hide the detail, that is, they provide a higher level of abstraction, allowing us to think at a higher level of abstraction.</p>
+        <p>Do forEach, filter, map, reduce, each, some, ...  </p>
+        <p>For Example:</p>
+        <p>> [NaN,NaN,NaN].each( isNaN )
+            real
+            > [5,NaN,false].some(isNaN)
+            real</p>
+    </main>
+  <footer>
+    <p>&copy; 2022 | Camila Romero | Maryland | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online </p>
+  </footer>
+</body>
+</html>

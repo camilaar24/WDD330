@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css" />
+    <title>Camila A. Romero</title>
+</head>
+<body>
+<header>
+    <h1>L06 Readings</h1>
+  </header>
+  <main>
+    <h2>Ch8: Forms </h2>  
+    <hr size="3" color="grey">
+        <p>Every HTML form is delimited by the <FORM> and </FORM> tags, among which the elements that make up the form must be found, as well as any other HTML element that we need: images, links, etc. In an HTML document there can be as many forms as needed, but they cannot be nested.</p>
+        <p>The attributes of the FORM tag are:</p><ul>
+          <li>ACTION specifies the URL of the CGI script that should process the data collected by the form. This is the link between the form and the CGI script.</li>
+          <li>METHOD determines the method to use to access the URL specified in the ACTION field. There are two methods, GET (the default) and POST (based on HTTP methods). In general cases, GET will be used when we have very simple forms, and POST when the forms have many fields, since GET might not be able to pass all the data to the server.
+            METHOD="GET"</li>
+        </ul>
+        <p>The form information is added to the end of the requested URL, behind a question mark ,`?'. This is what most web browsers do. The CGI script will receive it encoded in the environment variable QUERY_STRING. The main problem with this method is that it has length restrictions because many operating systems limit the name of a file to 256 characters, for example, and the Web server treats the URL, including the query, as if it were a type of file. . Another disadvantage is that the URL, including the query, is stored in the access logs of the servers, which may not be recommended if the query information is to be kept secret.
+            METHOD="POST"</p>
+            <p>The CGI script receives the information from the form through its standard input. The server does not set the end-of-file mark, EOF. Instead, and to know the length of the input data, the bytes are specified in the CONTENT_LENGTH variable.</p>
+    
+    <h2>Using FormData Objects Effectively</h2>  
+        <hr size="3" color="grey">
+    <p>
+        Instead of individually going to each one of the form elements when you want to bundle the data up and send it to the server you can use the form data object and very quickly and easily do parse the forms and gather up all the data.
+        </p>
+        <p>For the form data object to work, you should have the name attribute inside your inputs. When you just have an ID, it appears to work because there are no errors or complaints, but when you look at the form data object after you've gathered everything, it will be empty because none of the inputs will come through unless they have a name attribute. ID works great for JavaScript and CSS, but to work inside the form data object, you must have a name attribute.
+
+        </p>
+
+        <h2>MDN: Client-Side Form Validation</h2>  
+        <hr size="3" color="grey">
+        <p>"Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation and helps ensure data submitted matches the requirements set forth in the various form controls. " </p> 
+        
+        <p>Form Validation examples:</p>
+        <li>This field is required" (You can't leave this field blank).</li>
+        <li>"Please enter your phone number in the format xxx-xxxx" (A specific data format is required for it to be considered valid).</li>
+        <li>"Please enter a valid email address" (the data you entered is not in the right format).</li>
+        <p>Validation Attributes</p>
+        <li>required: Specifies whether a form field needs to be filled in before the form can be submitted.</li>
+        <li>minlength and maxlength: Specifies the minimum and maximum length of textual data (strings)</li>
+        <li>min and max: Specifies the minimum and maximum values of numerical input types</li>
+        <li>type: Specifies whether the data needs to be a number, and email address, or some other specific preset type.</li>
+        <li>pattern: Specifies a regular expression that defines a pattern the entered data needs to follow.</li>
+
+  </main>
+  <footer>
+    <p>&copy; 2022 | Camila Romero | Maryland | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online </p>
+  </footer>
+</body>
+</html>

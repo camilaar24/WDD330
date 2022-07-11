@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css" />
+    <title>Camila A. Romero</title>
+</head>
+<body>
+<header>
+    <h1>L07 Readings</h1>
+  </header>
+  <main>
+    <h2> Ch8: Transforms and Transitions</h2>  
+    <hr size="3" color="grey">
+        <i>Transform</i>
+        <p>If you only want to move an element vertically(transform: translateX(45px);) or horizontally (transform: translateY(-30px);) you can use the translatex or translatey functions respectively.
+
+        </p>
+        <p>Transforms don’t work on inline elements. Just add display: inline-block; to the span.
+
+        </p>
+            <p>The scale(x,y) function scales an element by the defined factors horizontally then vertically.
+
+            </p>
+            <p>transform: scale(1.5, 0.25);</p>
+           <p>As with translate, you can also use the scaleX(x) or scaleY(y) functions.: transform: translateX(40px) scale(1.5);</p>
+    
+    <i>Transitions<i>  
+        <hr size="1" color="grey">
+    <p>
+        The transition-property property defines the CSS properties of the element that should be transitioned, with all for all properties being the default.
+        </p>
+        <p>The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state: transition-duration: 0.2s;
+        </p>
+<p>The transition-timing-function lets you control the pace of the transition in even more granular detail: transition-timing-function: ease-out;
+
+</p>
+<p>With the transition-delay property, it’s possible to introduce a delay before the transition begins. Normally a transition begins immediately, so the default is 0. Include the number of milliseconds (ms) or seconds (s) to delay the transition: -webkit-transition-delay: 50ms;
+    transition-delay: 50ms;
+    </p>
+        <i>Animations</i>  
+        <hr size="1" color="grey">
+        <p>To create an animation, use the @keyframes rule for IE10+ and FF16+. Include @-webkit-keyframes for all WebKit implementations followed by a name of your choosing, which will serve as the identifier for the animation. Then, you can specify your keyframes.</p> 
+        
+        <p>Propierties:</p>
+        <li>animation-name: appearDisappear;</li>
+        <li>animation-duration: 300ms;</li>
+        <p>animation-timing-function: linear;</p>
+        <li>animation-iteration-count: infinite;</li>
+        <li>animation-direction: alternate;</li>
+        <li>animation-delay: 50ms;</li>
+        <li>animation-fill-mode: both;</li>
+
+        <h2> Ch11: Further Functions</h2>  
+    <hr size="3" color="grey">
+
+<p>
+    The "call()" method can be used to set the value of "this" within a function to an object that is supplied as the first argument.
+        </p>
+        <p>Example: function sayHello(){
+            return `Hello, my name is ${ this.name }`;
+        }        
+        </p>
+<p>Immediately Called Function Expressions is an anonymous function that is called as soon as it is defined, the function must be converted to an expression:
+    (function(){
+    })();    
+</p>
+
+<p>Init-Time Branching allows functions to work more effectively in the browser and avoids checking functions each time they are called.</p>
+<p>A recursive function is one that calls itself until a certain condition is met.</p>
+<p>function factorial(n) {
+    if (n === 0) {
+        return 1;
+    } plus {
+        returns n * factorial(n - 1);
+    }
+}
+</p>
+
+<p>If the number is even, divide by two
+
+    If the number is odd, multiply it by three and add one.
+    </p>
+
+    <i>Callbacks</i>  
+        <hr size="1" color="grey">
+        <p>Callbacks can be used to facilitate event-based asynchronous programming. JavaScript executes code sequentially in descending order. However, there are some cases where code is (or should be) executed after something else starts, and also non-sequentially. This is called asynchronous programming.</p>
+        <p>Callbacks ensure that a function will not be executed before a task completes, but will be executed just after the task has completed. It helps us develop asynchronous JavaScript code and keeps us safe from issues and bugs.</p>
+
+        
+        <i>Closures</i>  
+        <hr size="1" color="grey">
+        <p>Closures are widely used in JavaScript, you just have to know how to recognize them within the code and the functionality implications that it has.
+
+        </p>
+        <p>Closures are available because the language implements lambdas and higher-order functions, and they are a direct consequence of writing code using lexical scopes. Closure is a confusing concept because its use is "invisible".
+
+            Unlike other concepts such as functions, variables or others. Closures are not always used consciously and directly.
+            </p>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2022 | Camila Romero | Maryland | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online </p>
+  </footer>
+</body>
+</html>

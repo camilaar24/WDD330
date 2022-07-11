@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css" />
+    <title>Camila A. Romero</title>
+</head>
+<body>
+<header>
+    <h1>L08 Readings</h1>
+  </header>
+  <main>
+    <h2>Getting Started with JSON Web Tokens (JWT)</h2>  
+    <hr size="3" color="grey">
+        <i>Transform</i>
+        <p>JWT (JSON Web Token) is a standard that is contained in the RFC 7519 document.
+
+            It defines a mechanism to be able to propagate between two parties, and in a safe way, the identity of a certain user, in addition to a series of claims or privileges.  </p>
+        <p>
+            These privileges are encoded in JSON-type objects, which are embedded within the payload or body of a message that is digitally signed.
+        </p>
+            <p>JWTs consist of three parts separated by dots (.), which are:
+            </p>
+            <p>EXAMPLE:
+                {
+                  "alg": "HS256",
+                  "type": "JWT"
+                }
+                </p>
+           <p>Payload: where the user data and privileges appear, as well as all the information that we want to add, and all the data that we deem convenient.
+
+        </p>
+
+        <p>EXAMPLE:
+
+            {
+              "sub": "1234567890",
+              "name": "John Doe",
+              "admin": true
+            }
+            
+            </p>
+
+            <p>
+                Signature: a signature that allows us to verify if the token is valid, and this is where the crux of the matter lies, since if we are trying to make secure communication between parties and we have seen that we can take any token and see its content with a simple tool.  
+            </p>
+
+            <p>EXAMPLE:
+
+                HMACSHA256(
+                  base64UrlEncode(header) + "." +
+                  base64UrlEncode(payload),
+                  secret)
+                </p>
+
+ 
+    <p>
+        JWT always invites us to communicate between parties using HTTPS to encrypt the traffic, so that if someone were to intercept it, the traffic itself through HTTP over those SSL sockets would encrypt all the communication, the token, and everything. the rest, and thus add that possibility of security
+        </p>
+       
+        <h2>Develop, Debug, Learn?</h2>  
+        <hr size="3" color="grey">
+        <p>Java Script allowed developers to create interactivity in the browser and be real developers on the front-end side.</p>
+        <p>Creativity an important skill a developer should have. </p>
+        <p>Logical order: Learn, Develop, Debug</p>
+        <p>“we always say with developers were developing things but what we mostly do is depend on other things we are using other people's code to build our code to create things that are bigger and better than ours standing on the shoulders of giants”</p>
+        <p>“it's not about us it's about the end-users that we're there and these are people with horrible browsers terrible environments really bad connectivity with physical disabilities with problems in their eyesight with all kinds of things that we have to deal with and it is not about us it's about our tech legacy” (This is my motivation to become a web developer, to make the user experience better, and do a clean and efficient job so the users can have a great experience) </p>
+        <p>There is a lot of old code that is unlocked untouched not being used by anybody but by billions of users….(We need to fix that) </p>
+        <p>in typescript you can actually have changed the editor to your needs.        </p>
+        <p>We have the browser developer tools in the browser that are also written in typescript and are remote editable so you can just run them in the background. You can have a browser a headless browser as just an instance running from your code so you no longer have to go to the browser in order to see results. And the documentation that we have like the mdn and can I use of this world all have api's so this is super powerful and flexible because we can mix and match.         </p>
+    </main>
+  <footer>
+    <p>&copy; 2022 | Camila Romero | Maryland | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online </p>
+  </footer>
+</body>
+</html>
